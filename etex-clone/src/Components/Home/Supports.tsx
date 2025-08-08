@@ -79,9 +79,10 @@ export default function Supports() {
                   <img 
                     src={partner.logo} 
                     alt={partner.name} 
-                    className="max-h-40 max-w-full object-contain px-1 transition-all duration-300 gradient-border"
+                    className="h-40 w-auto object-contain px-1 transition-all duration-300 gradient-border"
                   />
                 </div>
+                
               </div>
             ))}
           </Slider>

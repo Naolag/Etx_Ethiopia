@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useAgendaStore } from "../../Store/agendaStore"
 
 export default function ExecutiveTrack() {
@@ -12,8 +13,9 @@ export default function ExecutiveTrack() {
                 
                 {selectedDay === "day1" && (
                     <div className="space-y-6">
+                       
                         <ScheduleItem time="08:30 – 09:30" content="Registration, Refreshments and Stage Performance" />
-                        <ScheduleItem time="09:30 – 09:35" content={<><span className="text-[#00EBDC]">Grand Opening:</span> Guest of Honor Formal reception accompanied by a ceremonial marching band</>} />
+                        <ScheduleItem  time="09:30 – 09:35" content={<><span className="text-[#00EBDC]">Grand Opening:</span> Guest of Honor Formal reception accompanied by a ceremonial marching band</>} />
                         <ScheduleItem time="10:00 – 10:15" content={<><span className="text-[#00EBDC]">Grand Opening:</span> Guest of Honor & Ministries Visit the Booth</>} />
                         <ScheduleItem time="10:15 – 10:25" content={
                             <>
@@ -105,15 +107,27 @@ interface ScheduleItemProps {
 function ScheduleItem({ time, content }: ScheduleItemProps) {
     return (
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 items-start">
-            <div className="flex-shrink-0">
+            <motion.div
+                initial={{x:-200,opacity:0}}
+                whileInView={{x:0,opacity:1}}
+                transition={{duration:1}}
+                viewport={{once:true}}
+                className="flex-shrink-0"
+            >
                 <p className="text-[#00EBDC] font-medium text-sm sm:text-base md:text-lg whitespace-nowrap">{time}</p>
-            </div>
+            </motion.div>
             <div className="flex-shrink-0 hidden sm:block">
                 <p className="text-white">:</p>
             </div>
-            <div className="text-white text-sm sm:text-base md:text-lg leading-relaxed flex-1">
+            <motion.div
+                initial={{x:200,opacity:0}}
+                whileInView={{x:0,opacity:1}}
+                transition={{duration:1}}
+                viewport={{once:true}}
+                className="text-white text-sm sm:text-base md:text-lg leading-relaxed flex-1"
+            >
                 {content}
-            </div>
+            </motion.div>
         </div>
     )
 }

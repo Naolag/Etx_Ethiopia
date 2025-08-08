@@ -4,8 +4,9 @@ import Supports from "../Components/Home/Supports"
 export default function Home(){
     return(
        <>
+       <Hero/>
         <Supports/>
-        <Messages/>
+        
        </>
     )
 }
