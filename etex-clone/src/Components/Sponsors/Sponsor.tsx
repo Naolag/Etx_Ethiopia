@@ -34,7 +34,7 @@ export default function Sponsor(){
                 </div>
                 <div>
                     <p className="text-center ">Knowledge Partner</p>
-                    <img src={meta} alt="meta-logo" className="mx-auto  h-40 "/>
+                    <img src={meta} alt="meta-logo" className="ml-20 sm:mx-auto  h-40 "/>
                 </div>
                 <div>
                     <p className="text-center ">platinum Sponsor</p>
@@ -64,13 +64,13 @@ export default function Sponsor(){
                     <div>
                         <p className="text-center mt-20">Gold Sponsors</p>
                         <div className="grid grid-cols-2  lg:grid-cols-4  justify-items-center items-center md:max-w-[60%] justify-items-center mx-auto mt-10">
-                        <img src={Oracle} alt="Oracle-logo" className="w-40 md:w-80 "/>
+                        <img src={Oracle} alt="Oracle-logo" className="w-32 sm:w-40 md:w-80 "/>
                         <img src={Safaricom} alt="Safaricom-logo" className=" h-32 md:h-40 "/>
                         <img src={Ethswitch} alt="Ethswitch-logo" className="  h-40 "/>
                         <img src={Tinnoware} alt="T-innoware-logo" className=" h-40 "/>
-                        <img src={Raras} alt="Raras-logo" className=" h-40 "/>
-                        <div className="bg-white rounded-3xl items-center justify-center flex  mt-8 w-40 md:w-60 lg:w-44 xl:w-52 h-28">
-                           <img src={Mkdss} alt="MKDSS-logo" className="  h-40 "/>
+                        <img src={Raras} alt="Raras-logo" className="w-32 mr-2 sm:w-auto h-40 "/>
+                        <div className="bg-white rounded-3xl items-center justify-center flex mr-8  mt-8 w-40 md:w-60 lg:w-44 xl:w-52 h-28">
+                           <img src={Mkdss} alt="MKDSS-logo" className=" mr-4 h-40 "/>
                         </div>
                        <div className="bg-white rounded-3xl items-center justify-center flex  mt-8 w-36 md:w-60 lg:w-44 xl:w-52 h-28">
                            <img src={Toppan} alt="Toppan-logo" className="  h-60 "/>
