@@ -43,7 +43,7 @@ export default function Navbar() {
           item.name === "Competition" ? (
             <div
               key={idx}
-              className="relative text-white text-2xl cursor-pointer"
+              className="relative text-white  cursor-pointer"
               onMouseEnter={() => {
                 clearTimeout(hideTimeout)
                 setDesktopCompOpen(true)
@@ -52,7 +52,7 @@ export default function Navbar() {
                 hideTimeout = setTimeout(() => setDesktopCompOpen(false), 200) // delay before hide
               }}
             >
-              <div className="flex items-center gap-1">
+              <div className="flex items-center hover:scale-110 font-bold gap-1">
                 <span>{item.name}</span>
                 <ChevronDown size={16} />
               </div>
@@ -60,7 +60,7 @@ export default function Navbar() {
                 <div className="absolute top-full left-0 bg-[#1a1f3c] text-sm shadow-md mt-2 rounded">
                   <a
                     href={item.sublink}
-                    className="block px-4 py-2 hover:bg-[#2a3053] transition"
+                    className="block px-4 py-2 hover:bg-[#2a3053]  transition"
                   >
                     AI Competition
                   </a>
@@ -77,7 +77,7 @@ export default function Navbar() {
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }
               }}
-              className="text-white text-2xl hover:scale-105 transition-all"
+              className="text-white hover:scale-105 transition-all"
             >
               {item.name}
             </a>

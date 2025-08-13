@@ -49,7 +49,7 @@ const FooterButtons: React.FC = () => {
                 ></span>
 
                 {/* Inner background */}
-                <span className="absolute inset-[2px] rounded-[10px] bg-[#0B1236]"></span>
+                <span className="absolute inset-[2px] rounded-[10px] bg-[#0B1236] hover:bg-[#00ebdc]"></span>
 
                 {/* Text */}
                 <span className="relative z-10">{link.text}</span>
@@ -70,7 +70,7 @@ const FooterButtons: React.FC = () => {
               ></span>
 
               {/* Inner background */}
-              <span className="absolute inset-[2px] rounded-[10px] bg-[#0B1236]"></span>
+              <span className="absolute inset-[2px] rounded-[10px] bg-[#0B1236] hover:bg-[#00ebdc]"></span>
 
               {/* Text */}
               <span className="relative z-10">{link.text}</span>
