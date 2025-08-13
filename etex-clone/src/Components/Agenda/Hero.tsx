@@ -33,7 +33,7 @@ export default function Hero() {
 
         <div className="bg-[#00EBDC] w-[90%] max-w-2xl lg:max-w-none mx-auto h-12 sm:h-14 rounded-2xl sm:rounded-3xl flex items-center mt-6 md:mt-8">
           <p className="ml-4 sm:ml-6 md:ml-10 text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#070C23] font-serif">Time</p>
-          <div className="h-full w-px bg-black ml-4 sm:ml-6 md:ml-16" />
+          <div className="h-full w-px bg-black ml-4 sm:ml-6 md:ml-40" />
           <p className="text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#070C23] font-serif ml-auto mr-4 sm:mr-6 md:mr-10">Session</p>
         </div>
       </div>
@@ -41,8 +41,3 @@ export default function Hero() {
   );
 }
 
-<motion.p
-
->
-Agenda
-</motion.p>

@@ -81,7 +81,7 @@ export default function Hero() {
           >
             {Array(10).fill(null).map((_, i) => (
               <div key={i} className="flex items-center mx-10 md:mx-20">
-                <img src={elogo} alt="etex logo" className="md:h-20 lg:h-32 mr-4" />
+                <img src={elogo} alt="etex logo" className="md:h-16 mr-4" />
                 <span className="text-2xl md:text-4xl text-white font-semibold whitespace-nowrap">
                   The event is successfully concluded
                 </span>

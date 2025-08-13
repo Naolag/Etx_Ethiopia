@@ -108,15 +108,15 @@ function ScheduleItem({ time, content }: ScheduleItemProps) {
     return (
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 items-start">
             <motion.div
-                initial={{x:-200,opacity:0}}
-                whileInView={{x:70,opacity:1}}
+                initial={{x:-100,opacity:0}}
+                whileInView={{x:190,opacity:1}}
                 transition={{duration:1}}
                 viewport={{once:true}}
                 className="flex-shrink-0"
             >
                 <p className="text-[#00EBDC] font-medium text-sm sm:text-base md:text-lg whitespace-nowrap">{time}</p>
             </motion.div>
-            <div className="flex-shrink-0 hidden ml-20 sm:block">
+            <div className="flex-shrink-0 hidden ml-44 sm:block">
                 <p className="text-white">:</p>
             </div>
             <motion.div
