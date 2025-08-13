@@ -26,19 +26,19 @@ export default function Navbar() {
 
   return (
     <section className="min-w-[320px] fixed top-0 left-0 right-0 z-50">
-      <div className="md:flex bg-[#0B123670] backdrop-blur-sm font-bold items-center   py-3 mr-4">
-        <img src={nav} alt="nav logos" className="md:max-w-[80%] lg:max-w-[30%] lg:h-auto lg:mr-40 ml-2" />
+      <div className="md:flex bg-[#0B123670] backdrop-blur-sm font-bold items-center   py-3 ">
+        <img src={nav} alt="nav logos" className="md:max-w-[80%] lg:max-w-[30%] lg:h-auto lg:mr-40 ml-2 mr-80" />
         {/* Hamburger menu always for <lg */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="text-white block lg:hidden ml-[95%] md:ml-28"
+          className="text-white block lg:hidden ml-[90%] md:ml-28 "
         >
           {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       
 
       {/* Desktop menu for lg+ */}
-      <div className="hidden lg:flex justify-center  py-3 space-x-8 ml-auto mr-10 flex-wrap">
+      <div className="hidden lg:flex justify-center  py-3 space-x-8 ml-auto  flex-wrap">
         {menu.map((item, idx) =>
           item.name === "Competition" ? (
             <div
@@ -89,7 +89,7 @@ export default function Navbar() {
 
       {/* Mobile + md hamburger menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden  flex flex-col items-center p-4 gap-3 z-50">
+        <div className="lg:hidden  flex flex-col items-center p-4 gap-3 z-50 bg-[#0B123670] backdrop-blur-md">
           {menu.map((item, idx) => {
             if (isSm) {
               

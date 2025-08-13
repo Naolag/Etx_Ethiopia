@@ -5,7 +5,7 @@ export default function ExecutiveTrack() {
     const { selectedDay } = useAgendaStore();
     
     return (
-        <section className="bg-[#0B1236] py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+        <section className="bg-[#0B1236] py-8 md:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-[#F9F70C] font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold mb-8 md:mb-12">
                     EXECUTIVE TRACK – Cybersecurity Focused

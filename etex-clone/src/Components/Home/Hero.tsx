@@ -33,19 +33,19 @@ export default function Hero() {
       </div>
       
       <div className="relative h-screen flex  ">
-      <div className="z-20 mt-[20%] ml-4 ">
+      <div className="z-20 mt-[20%] xl:mt-48 ml-4 ">
         <div className=" mt-60 sm:mt-40 md:mt-10 2xl:mt-0">
-            <img src={Etexlogo} className="w-96 h-60 md:w-[765px] xl:w-[1230px] xl:top-20 2xl:top-40 xl:h-auto absolute"/>
+            <img src={Etexlogo} className="w-96 h-60 md:w-[763px] xl:w-[800px] xl:top-20 2xl:top-40 xl:h-auto absolute"/>
             <div>
-            <div className=" flex gap-1">
+            <div className=" flex gap-1 ">
               <div>
-                <div className="text-white  font-frizon text-[15px] sm:text-[18px] md:text-4xl xl:text-6xl mt-36 sm:mt-32 xl:mt-10">
+                <div className="text-white  font-frizon text-[15px] sm:text-[18px] md:text-4xl  mt-36 sm:mt-32 xl:mt-0 ">
                   <div className=" ">ETHIOPIAN TECK</div>
                   <div className="">E&nbsp;&nbsp;X&nbsp;&nbsp;P&nbsp;&nbsp;O&nbsp;&nbsp;2&nbsp;&nbsp;0&nbsp;&nbsp;2&nbsp;5</div>
                 </div>  
                 <div className="h-1  mt-2 w-full bg-white"/>
-                <div className="font-serif text-[7px] md:text-[16px] xl:text-[27px] text-white font-bold">SHAPPING  ETHIOPIA'S DIGITAL FUTURE</div>
-                <div className="flex text-[6px] sm:text-[7px] md:text-[16px] xl:text-[26px] gap-1 font-sans text-white  items-center">
+                <div className="font-serif text-[7px] md:text-[16px]  text-white font-bold">SHAPPING  ETHIOPIA'S DIGITAL FUTURE</div>
+                <div className="flex text-[6px] sm:text-[7px] md:text-[16px]  gap-1 font-sans text-white  items-center">
                   <p>INNOVATION</p>
                   <div className="h-2 md:h-4 w-px bg-white"/>
                   <p>SECURITY</p>
@@ -53,12 +53,12 @@ export default function Hero() {
                   <p>TRANSFORMATION</p>
                 </div>
               </div>
-                 <div className="mt-36 xl:mt-14 w-1 ml-2 bg-white "/>
-                 <div className=" ml-2 text-white font-serif text-[9px] sm:text-[13px] md:text-[18px] xl:text-3xl font-bold mt-48 md:mt-52 xl:mt-40">AICC, ADDIS ABABA, ETHIOPIA</div>
+                 <div className="mt-36 xl:mt-4 w-1 ml-2 bg-white "/>
+                 <div className=" ml-2 text-white font-serif text-[9px] sm:text-[13px] md:text-[18px] xl:text-3xl font-bold mt-48 md:mt-52 xl:mt-16">AICC, ADDIS ABABA, ETHIOPIA</div>
                  </div>
             </div>
           </div>
-            <div className="font-frizon text-white text-lg md:text-2xl xl:text-5xl ">THE LARGEST TECH EVENT  IN EAST AFRICA!</div>
+            <div className="font-frizon text-white text-lg md:text-2xl  ">THE LARGEST TECH EVENT  IN EAST AFRICA!</div>
             <img src={organised} alt=" organised by" className="md:absolute right-10 bottom-0  w-48 md:w-80 mb-2 mr-10 mt-4" />
             <a href="https://www.google.com/maps/place/2VF2%2BJFM+Addis+International+Convention+Center+(AICC),+%E1%8A%A0%E1%8B%B2%E1%88%B5+%E1%8A%A0%E1%89%A0%E1%89%A3/@9.0240862,38.851157,14z/data=!4m6!3m5!1s0x164b91fe5695e94f:0xcb636290ea972b7d!8m2!3d9.0240862!4d38.851157!16s%2Fg%2F11gxslb_jf?g_ep=Eg1tbF8yMDI1MDgwNF8wIJvbDyoASAJQAQ%3D%3D" 
              target="_blank" rel="noopener noreferrer" className="md:hidden absolute right-4 bottom-4    flex  border-2 w-48  py-2 items-center justify-center gap-1 rounded-3xl  text-bold  text-white hover:bg-white hover:text-black transition-colors">
