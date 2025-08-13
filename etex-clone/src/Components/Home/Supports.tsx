@@ -127,18 +127,21 @@ export default function Supports() {
             to { transform: rotate(360deg); }
           }
         `}
-      </style>
-
-
- 
+      </style> 
    
-    <div className="relative flex items-center justify-center min-h-screen bg-[#0a0e27] overflow-hidden px-4">
+    <div className="relative insider-container z-50 w-full p-4 flex items-center bg-[#0B1236] justify-center min-h-screen overflow-hidden px-4">
       {/* Rotating Lines */}
-      <div className="absolute w-[120%] h-[120%] rounded-lg border-t-4 border-[#00EBDC] animate-spin-slow"></div>
-      <div className="absolute w-[120%] h-[120%] rounded-lg border-b-4 border-[#f9f70c] animate-spin-reverse-slow"></div>
-
-      {/* Text Container */}
-      <div className="max-w-5xl text-center">
+      <div id="text" className="max-w-5xl  text-center relative z-10 p-2 overflow-hidden">
+      <div id="lines"
+          className="absolute -top-[10%] sm:-top-[40%] md:-top-[50%] lg:-top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 sm:w-25 h-[2000px] sm:h-[1600px] -z-10"
+          style={{
+            animation: "spin 8s linear infinite",
+            background: "linear-gradient(to top, #00EBDC, #f9f70c)",
+          }}
+        ></div>
+        
+      <div id="text" className="max-w-5xl bg-[#0B1236]  text-center relative z-10 ">
+      <div className="p-4">
         <h1 className="font-frizon text-2xl md:text-4xl text-[#00EBDC] mb-4">
           Ethiopia: One of Africa’s Fastest-Growing Economies, Leading the Digital Revolution!
         </h1>
@@ -169,9 +172,11 @@ export default function Supports() {
           <span className="text-[#f9f70c]">$3.4 billion</span> Extended Credit Facility (ECF) arrangement, supporting Ethiopia’s continued growth and technological advancement.
         </p>
       </div>
+      </div>
+      </div>
     </div>
   
-  
+    
     </section>
   );
 }

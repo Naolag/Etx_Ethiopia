@@ -2,16 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 const Socials: React.FC = () => {
-  const [iconSize, setIconSize] = useState(60);
+
   const [showSocials, setShowSocials] = useState(true);
 
-  const handleResize = () => {
-    const width = window.innerWidth;
-    if (width >= 1024) setIconSize(90);
-    else if (width >= 768) setIconSize(80);
-    else if (width >= 640) setIconSize(70);
-    else setIconSize(60);
-  };
+ 
 
   const handleScroll = () => {
     const hero = document.getElementById('hero');
@@ -22,13 +16,12 @@ const Socials: React.FC = () => {
   };
 
   useEffect(() => {
-    handleResize();
-    window.addEventListener('resize', handleResize);
+    
+   
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // initial check
 
     return () => {
-      window.removeEventListener('resize', handleResize);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
@@ -54,7 +47,7 @@ const Socials: React.FC = () => {
             url={url}
             bgColor="transparent"
             fgColor="#fff"
-            style={{ height: iconSize, width: iconSize }}
+            style={{ height:40, width:40 }}
             className={iconClass}
           />
         ))}
